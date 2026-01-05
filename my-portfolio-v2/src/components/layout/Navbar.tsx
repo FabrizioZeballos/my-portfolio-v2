@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 export function Navbar() {
   return (
-    <div className="w-full py-6 flex justify-between border border-red-500">
+    <div className="sticky top-4 w-full py-6 flex justify-between border border-red-500">
       <div className="py-2 px-4 flex items-center">Fabrizio Zeballos</div>
       <div className="flex justify-between items-center border border-green-500">
         <div className="py-2 px-4">
