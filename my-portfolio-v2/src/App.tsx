@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className="text-3xl font-bold underline text-blue-600 mb-20">
+        My new portfolio
+      </h1>
+      <h1 className="text-3xl font-bold">Tailwind is working 🚀</h1>
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex-1">
+            <h1 className="text-sm md:text-3xl lg:text-5xl font-semibold">
+              i'm fabrizio ✌️
+            </h1>
+            <p className="mt-4 text-zinc-400">
+              full-stack dev building sleek apps
+            </p>
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
