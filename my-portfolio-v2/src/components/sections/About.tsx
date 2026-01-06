@@ -4,7 +4,7 @@ import { CardHeader } from "../common/CardHeader";
 export function About() {
   return (
     <div className="px-4 md:px-0">
-      <div className="w-full flex flex-col md:flex-row-reverse md:bg-[#141415] md:text-white md:py-10 md:px-10">
+      <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:text-white md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px]">
         <div className="flex flex-1">
           <img src={aboutImg} alt="" className="rounded-[40px] mb-14 md:mb-0" />
         </div>
@@ -78,7 +78,7 @@ export function About() {
                 </div>
               </div>
             </p>
-            <p className="hidden md:block my-6">
+            <p className="hidden md:block mt-6 mb-3">
               <span>when i'm not building interfaces or debugging</span>
               <br />
               <span>apis, i'm out exploring places like this 📸</span>
