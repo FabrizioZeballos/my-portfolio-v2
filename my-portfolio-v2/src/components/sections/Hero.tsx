@@ -1,18 +1,20 @@
 export function Hero() {
   return (
-    <div className="h-[calc(100vh-15rem)] pl-4 flex items-center border border-blue-500">
-      <p className="text-4xl leading-tight text-white-primary">
+    <div className="h-[calc(100vh-15rem)] px-4 md:px-24 flex items-center border border-blue-500">
+      <p className="text-[41px] tracking-tight leading-normal text-white-primary font-jakarta font-bold">
         <span className="block text-muted">
           i'm fabrizio <span>✌️</span>
         </span>
         <span className="block">
           full-stack dev
           <br className="md:hidden" />
+          <span className="hidden md:inline"> </span>
           building sleek apps
         </span>
         <span className="block">
           @b/ackcode_,
           <br className="md:hidden" />
+          <span className="hidden md:inline"> </span>
           swiss-based
         </span>
       </p>

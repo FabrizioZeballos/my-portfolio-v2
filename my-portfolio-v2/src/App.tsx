@@ -8,8 +8,8 @@ import { Projects } from "./components/sections/Projects";
 
 function App() {
   return (
-    <div className="relative px-4 py-4 flex justify-center bg-background">
-      <div className="md:w-[70rem] border border-green-500">
+    <div className="relative px-4 py-4 pt-5 flex justify-center bg-background ">
+      <div className="md:w-[69rem] border border-green-500">
         <Navbar />
         <Hero />
         <About />
