@@ -5,8 +5,12 @@ export function About() {
   return (
     <div className="px-4 md:px-0">
       <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:text-white md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px]">
-        <div className="flex flex-1">
-          <img src={aboutImg} alt="" className="rounded-[40px] mb-14 md:mb-0" />
+        <div className="flex flex-1 w-full h-full">
+          <img
+            src={aboutImg}
+            alt=""
+            className="rounded-[40px] mb-14 md:mb-0 w-full h-full object-cover"
+          />
         </div>
         <div className="flex flex-col flex-1">
           <CardHeader header={"about me"} />
@@ -43,9 +47,7 @@ export function About() {
               </span>
             </p>
             <p className="my-6">
-              <span>here are some technologies i've been working</span>
-              <br />
-              <span>with:</span>
+              <span>some technologies i've been working with:</span>
               <br />
               <div className="mt-6 flex flex-col gap-4">
                 {" "}
@@ -78,7 +80,7 @@ export function About() {
                 </div>
               </div>
             </p>
-            <p className="hidden md:block mt-6 mb-3">
+            <p className="hidden md:block mt-6">
               <span>when i'm not building interfaces or debugging</span>
               <br />
               <span>apis, i'm out exploring places like this 📸</span>
