@@ -18,9 +18,7 @@ export function Navbar() {
   return (
     <nav
       className={`
-    sticky top-4 z-50 pl-6 pr-2 py-3 mx-2 md:mx-18 flex justify-between rounded-2xl
-    /* Essential for smoothness */
-    transition-all duration-1000 ease-in-out border
+    sticky top-3 md:top-8 z-50 pl-6 pr-2 md:pl-6 md:pr-2 py-3 md:mx-18 flex justify-between rounded-2xl transition-all duration-1000 ease-in-out border
     ${
       isScrolled
         ? "border-white/10 bg-white/5 backdrop-blur-md shadow-lg"
@@ -28,7 +26,7 @@ export function Navbar() {
     }
   `}
     >
-      <div className="py-2 pr-4 flex items-center font-sans text-sm text-gray-primary uppercase tracking-widest">
+      <div className="py-2 pr-4 flex items-center font-sans text-xs md:text-sm text-gray-primary uppercase tracking-widest">
         Fabrizio Zeballos
       </div>
       <div className="flex items-center justify-between">
@@ -38,7 +36,7 @@ export function Navbar() {
           rel="noopener noreferrer"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
         >
-          <FaLinkedin className="size-6 text-gray-primary group-hover:text-white-primary transition-colors" />
+          <FaLinkedin className="size-7 text-gray-primary group-hover:text-white-primary transition-colors" />
         </a>
 
         <a
@@ -47,14 +45,14 @@ export function Navbar() {
           rel="noopener noreferrer"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
         >
-          <FaGithub className="size-6 text-gray-primary group-hover:text-white-primary transition-colors" />
+          <FaGithub className="size-7 text-gray-primary group-hover:text-white-primary transition-colors" />
         </a>
 
         <a
           href="mailto:your@email.com"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
         >
-          <MdEmail className="size-6 text-gray-primary group-hover:text-white-primary transition-colors" />
+          <MdEmail className="size-7 text-gray-primary group-hover:text-white-primary transition-colors" />
         </a>
       </div>
     </nav>
