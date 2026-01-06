@@ -23,7 +23,7 @@ export function ProjectItem({
       <img src={image} alt="" className="flex-1" />
       <div className="pl-20 py-4 flex flex-col flex-1 justify-between">
         <div className="flex justify-between">
-          <h4>{title}</h4>
+          <h4 className="text-white-secondary">{title}</h4>
           <div className="flex gap-4">
             {links?.map((link, index) => (
               <a
@@ -33,18 +33,17 @@ export function ProjectItem({
                 rel="noreferrer"
                 className="hover:opacity-70 transition-opacity"
               >
-                {/* Render the icon component */}
-                <link.icon size={20} className="text-white" />
+                <link.icon size={20} className="text-white-secondary" />
               </a>
             ))}
           </div>
         </div>
-        <p>{description}</p>
+        <p className="text-gray-secondary">{description}</p>
         <div className="flex gap-2 mt-4">
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="text-[10px] uppercase tracking-tighter text-gray-500 border border-white/10 px-2 py-1 rounded"
+              className="text-[10px] uppercase tracking-tighter text-white-primary px-2 py-1 rounded bg-background"
             >
               {tech}
             </span>

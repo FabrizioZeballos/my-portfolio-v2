@@ -10,16 +10,22 @@ export function About() {
         </div>
         <div className="flex flex-col flex-1">
           <CardHeader header={"about me"} />
-          <div>
+          <div className="text-gray-secondary">
             <p>
-              <span>currently a full-stack developer at b/ackcode_,</span>
+              <span>
+                currently a full-stack developer at{" "}
+                <span className="text-white-secondary">b/ackcode_,</span>
+              </span>
               <br />
               <span>a swiss-based software startup</span>
             </p>
             <p>
               <span>there, I built react features for an in-person</span>
               <br />
-              <span>luxury watch configurator for audemars piguet</span>
+              <span>
+                luxury watch configurator for{" "}
+                <span className="text-white-secondary">audemars piguet</span>
+              </span>
               <br />
               <span>and contributed to an ai assistant using llms,</span>
               <br />
@@ -28,7 +34,9 @@ export function About() {
             <p>
               <span>studying law on the side, now in my 4th year at</span>
               <br />
-              <span>national university of cuyo</span>
+              <span className="text-white-secondary">
+                national university of cuyo
+              </span>
             </p>
             <p>
               <span>here are some technologies i've been working</span>
@@ -37,15 +45,30 @@ export function About() {
               <br />
               <div>
                 <div>
-                  <span>- react.js</span> <span>- python</span>
+                  <span>
+                    <span className="text-white-secondary">-</span> react.js
+                  </span>{" "}
+                  <span>
+                    <span className="text-white-secondary">-</span> python
+                  </span>
                 </div>
                 <br />
                 <div>
-                  <span>- javascript</span> <span>- node.js</span>
+                  <span>
+                    <span className="text-white-secondary">-</span> javascript
+                  </span>{" "}
+                  <span>
+                    <span className="text-white-secondary">-</span> node.js
+                  </span>
                 </div>
                 <br />
                 <div>
-                  <span>- typescript</span> <span>- express.js</span>
+                  <span>
+                    <span className="text-white-secondary">-</span> typescript
+                  </span>
+                  <span>
+                    <span className="text-white-secondary">-</span> express.js
+                  </span>
                 </div>
               </div>
             </p>

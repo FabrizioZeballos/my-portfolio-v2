@@ -3,5 +3,9 @@ type CardHeaderProps = {
 };
 
 export function CardHeader({ header }: CardHeaderProps) {
-  return <h2 className="text-3xl sm:text-4xl md:text-5xl">/ {header}</h2>;
+  return (
+    <h2 className="text-3xl sm:text-4xl md:text-5xl text-white-primary">
+      / {header}
+    </h2>
+  );
 }

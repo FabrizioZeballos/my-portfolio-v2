@@ -1,4 +1,4 @@
-import memoji from "../../assets/experience-1.png"; // Replace with your actual path
+import memoji from "../../assets/experience-1.png";
 
 export function Contact() {
   return (
@@ -7,7 +7,6 @@ export function Contact() {
         href="mailto:your-email@example.com"
         className="group flex items-center gap-6 hover:opacity-80 transition-all duration-300"
       >
-        {/* Memoji Image */}
         <div className="w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
           <img
             src={memoji}
@@ -15,9 +14,7 @@ export function Contact() {
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
         </div>
-
-        {/* Text */}
-        <h2 className="text-4xl md:text-7xl font-bold text-white tracking-tighter">
+        <h2 className="text-4xl md:text-7xl font-bold text-white-primary tracking-tighter">
           get in touch
         </h2>
       </a>

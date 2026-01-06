@@ -1,8 +1,8 @@
 export function Hero() {
   return (
     <div className="h-[calc(100vh-15rem)] pl-4 flex items-center border border-blue-500">
-      <p className="text-4xl leading-tight">
-        <span className="block">
+      <p className="text-4xl leading-tight text-white-primary">
+        <span className="block text-muted">
           i'm fabrizio <span>✌️</span>
         </span>
         <span className="block">
