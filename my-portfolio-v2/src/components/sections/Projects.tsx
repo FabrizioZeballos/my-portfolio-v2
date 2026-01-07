@@ -4,46 +4,58 @@ import project1 from "../../assets/project-1.png";
 import project2 from "../../assets/project-2.png";
 import project3 from "../../assets/project-3.png";
 import { FaGithub, FaPlayCircle } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
 
 export function Projects() {
   return (
     <div className="hidden md:block md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px]">
-      <div className="flex flex-col bg-[#141415] text-white gap-20">
+      <div className="flex flex-col bg-[#141415] text-white gap-30">
         <CardHeader header={"pet projects"} />
         <ProjectItem
           image={project1}
           title={"hhbc bank"}
           description={
-            "an appointment scheduling app for a bank aiming to enhance customer service where users can register, log in, schedule, and cancel appointments seamlessly and intuitively"
+            "a banking application enhancing customer service with streamlined appointment scheduling, cancellation, and integrated user authentication"
           }
           techStack={["express", "react", "redux", "postgresql"]}
           links={[
-            { url: "https://github.com/...", icon: FaGithub },
-            { url: "https://github.com/...", icon: FaPlayCircle },
+            {
+              url: "https://www.linkedin.com/posts/zeballosfab_hi-there-excited-to-showcase-my-latest-activity-7180534387124428801-o7SK/?utm_source=share&utm_medium=member_desktop",
+              icon: FaPlayCircle,
+            },
+            {
+              url: "https://github.com/FabrizioZeballos/Bank-Application",
+              icon: FaGithub,
+            },
           ]}
         />
         <ProjectItem
           image={project2}
           title={"coreforce fitness"}
           description={
-            "a gym application designed to make a significant impact on the fitness industry where users can interact with trainers in real-time via chat, purchase memberships, and access an ai-powered chatbot"
+            "a gym application where users can access an ai-powered chatbot, interact with trainers in real-time, and purchase memberships"
           }
           techStack={["nestjs", "react", "tailwind", "postgresql"]}
           links={[
-            { url: "https://github.com/...", icon: FaGithub },
-            { url: "https://github.com/...", icon: FaPlayCircle },
+            { url: "https://front-core-force.vercel.app/", icon: FaLink },
+            {
+              url: "https://github.com/AgustinNBertagna/core-force-fitness",
+              icon: FaGithub,
+            },
           ]}
         />
         <ProjectItem
           image={project3}
           title={"ecommerce backend"}
           description={
-            "an ecommerce app designed to manage products, users, and orders with a robust backend built on a restful api that integrates seamlessly with other systems for a smooth user experience"
+            "an ecommerce app designed to manage products, users, and orders with a backend built on a restful api that integrates seamlessly with other systems"
           }
           techStack={["nestjs", "postgresql"]}
           links={[
-            { url: "https://github.com/...", icon: FaGithub },
-            { url: "https://github.com/...", icon: FaPlayCircle },
+            {
+              url: "https://github.com/FabrizioZeballos/Ecommerce-Backend",
+              icon: FaGithub,
+            },
           ]}
         />
       </div>

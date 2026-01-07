@@ -29,10 +29,10 @@ export function ProjectItem({
       </div>
       <div className="pl-18 flex flex-col flex-1">
         <div className="flex justify-between">
-          <h4 className="text-xl text-white-secondary font-semibold">
+          <h4 className="text-xl text-white-secondary font-semibold font-jakarta">
             {title}
           </h4>
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
             {links?.map((link, index) => (
               <a
                 key={index}
@@ -41,17 +41,17 @@ export function ProjectItem({
                 rel="noreferrer"
                 className="hover:opacity-70 transition-opacity"
               >
-                <link.icon size={20} className="text-white-secondary" />
+                <link.icon size={17} className="text-white-secondary" />
               </a>
             ))}
           </div>
         </div>
-        <p className="my-2 text-gray-secondary">{description}</p>
-        <div className="flex gap-2 mt-4">
+        <p className="my-3 text-gray-secondary font-sans">{description}</p>
+        <div className="flex gap-3 mt-4">
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="text-xs text-white-primary px-2 py-1 rounded bg-background"
+              className="text-[12px] text-white-primary font-semibold px-4 py-2 rounded-[8px] bg-background tracking-wide"
             >
               {tech}
             </span>

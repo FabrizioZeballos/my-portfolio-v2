@@ -2,7 +2,7 @@ import memoji from "../../assets/experience-1.png";
 
 export function Contact() {
   return (
-    <section className="py-40 flex justify-center items-center bg-[#0a0a0a]">
+    <section className="py-40 flex justify-center items-center">
       <a
         href="mailto:your-email@example.com"
         className="group flex items-center gap-6 hover:opacity-80 transition-all duration-300"
