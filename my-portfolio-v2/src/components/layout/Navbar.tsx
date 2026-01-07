@@ -31,7 +31,7 @@ export function Navbar() {
       </div>
       <div className="flex items-center justify-between">
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/zeballosfab/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
@@ -40,7 +40,7 @@ export function Navbar() {
         </a>
 
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/FabrizioZeballos"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
@@ -49,7 +49,7 @@ export function Navbar() {
         </a>
 
         <a
-          href="mailto:your@email.com"
+          href="mailto:zeballosfab@gmail.com"
           className="p-3 mx-1 rounded-xl transition-colors duration-10 hover:bg-white/6 group"
         >
           <MdEmail className="size-7 text-gray-primary group-hover:text-white-primary transition-colors" />

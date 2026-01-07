@@ -3,9 +3,9 @@ import memojiSecond from "../../assets/memoji-1.png";
 
 export function Contact() {
   return (
-    <section className="py-100 flex justify-center items-center">
+    <section className="py-140 flex justify-center items-center">
       <a
-        href="mailto:your-email@example.com"
+        href="mailto:zeballosfab@gmail.com"
         className="group flex items-center"
       >
         <div className="relative w-16 h-16 md:w-30 md:h-30 overflow-hidden rounded-full">
@@ -20,9 +20,9 @@ export function Contact() {
             className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-110"
           />
         </div>
-        <h2 className="text-[32px] md:text-[42px] font-bold text-white-primary tracking-tighter">
+        <span className="pr-10 text-[32px] md:text-[42px] font-bold font-jakarta text-white-primary tracking-[0.005em]">
           get in touch
-        </h2>
+        </span>
       </a>
     </section>
   );
