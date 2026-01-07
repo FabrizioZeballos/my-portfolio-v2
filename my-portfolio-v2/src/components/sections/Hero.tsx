@@ -1,22 +1,65 @@
+import { motion } from "motion/react";
+
 export function Hero() {
   return (
     <div className="h-[calc(100vh-15rem)] px-4 md:px-24 flex items-center">
       <p className="text-[32px] md:text-[42px] tracking-tight leading-normal text-white-primary font-jakarta font-bold">
-        <span className="block text-muted">
-          i'm fabrizio <span>✌️</span>
-        </span>
-        <span className="block">
-          full-stack dev
-          <br className="md:hidden" />
-          <span className="hidden md:inline"> </span>
-          building sleek apps
-        </span>
-        <span className="block">
-          @b/ackcode_,
-          <br className="md:hidden" />
-          <span className="hidden md:inline"> </span>
-          swiss-based
-        </span>
+        <div className="flex items-center gap-1">
+          <motion.span
+            className="block text-muted"
+            initial={{ x: -40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 120,
+              damping: 12,
+            }}
+          >
+            i&apos;m fabrizio
+          </motion.span>
+          <motion.span
+            className="block text-muted"
+            initial={{ x: -40, opacity: 0, rotate: -60 }}
+            animate={{ x: 0, opacity: 1, rotate: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.7,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 132,
+              damping: 8,
+            }}
+          >
+            ✌️
+          </motion.span>
+        </div>
+        <motion.div
+          className="block text-muted"
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 0.7,
+            ease: "easeIn",
+            type: "spring",
+            stiffness: 50,
+            damping: 12,
+          }}
+        >
+          <span className="block">
+            full-stack dev
+            <br className="md:hidden" />
+            <span className="hidden md:inline"> </span>
+            building sleek apps
+          </span>
+          <span className="block">
+            @b/ackcode_,
+            <br className="md:hidden" />
+            <span className="hidden md:inline"> </span>
+            swiss-based
+          </span>
+        </motion.div>
       </p>
     </div>
   );
