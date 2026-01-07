@@ -8,11 +8,22 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 600);
+      const threshold = window.innerHeight * 0.4;
+      setIsScrolled(window.scrollY > threshold);
     };
 
+    // Run once on mount to check initial position
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // Update on resize if the user rotates their phone/resizes window
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   return (
