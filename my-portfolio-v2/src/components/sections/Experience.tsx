@@ -21,7 +21,12 @@ export function Experience() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto py-60 px-5 md:py-100 md:pb-120 md:px-24 [&>*:nth-child(even)]:md:translate-y-24">
       {EXPERIENCE_DATA.map((exp, index) => (
-        <ExperienceCard key={exp.company} {...exp} delay={index * 0.6} />
+        <ExperienceCard
+          key={exp.company}
+          {...exp}
+          delay={index * 0.6}
+          index={index}
+        />
       ))}
     </div>
   );

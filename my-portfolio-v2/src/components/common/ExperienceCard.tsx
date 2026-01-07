@@ -6,6 +6,7 @@ type ExperienceCardProps = {
   role: string[];
   period: string;
   delay?: number;
+  index: number;
 };
 
 export function ExperienceCard({
@@ -14,7 +15,11 @@ export function ExperienceCard({
   role,
   period,
   delay,
+  index,
 }: ExperienceCardProps) {
+  const isLeft = index % 2 === 0;
+  const hoverRotation = isLeft ? 4 : -4;
+
   return (
     <motion.div
       initial={{
@@ -33,11 +38,54 @@ export function ExperienceCard({
         rotateZ: 0,
         scale: 1,
       }}
+      whileHover={{
+        rotateZ: hoverRotation,
+        transition: {
+          type: "spring",
+          stiffness: 300,
+          damping: 15, // Low damping creates the "bounce"
+          delay: 0,
+        },
+      }}
       viewport={{ once: true, margin: "-300px" }}
       transition={{
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
+        // This delay applies to everything not specified below
         delay: delay,
+
+        // Custom settings for the entrance properties
+        opacity: {
+          delay: delay,
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        },
+        y: {
+          delay: delay,
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        },
+        rotateX: {
+          delay: delay,
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        },
+        rotateY: {
+          delay: delay,
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        },
+        scale: {
+          delay: delay,
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+        },
+
+        // The fix: rotateZ (hover) has 0 delay and its own spring
+        rotateZ: {
+          delay: 0,
+          type: "spring",
+          stiffness: 300,
+          damping: 15,
+        },
       }}
       style={{ perspective: 1000 }}
       className="w-full p-8 flex flex-col bg-card border-2 border-white/4 rounded-[40px]"
