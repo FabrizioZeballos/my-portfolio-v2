@@ -5,6 +5,7 @@ type ExperienceCardProps = {
   company: string;
   role: string[];
   period: string;
+  link: string;
   delay?: number;
   index: number;
 };
@@ -14,19 +15,23 @@ export function ExperienceCard({
   company,
   role,
   period,
+  link,
   delay,
   index,
 }: ExperienceCardProps) {
   const isLeft = index % 2 === 0;
-  const hoverRotation = isLeft ? 4 : -4;
+  const hoverRotation = isLeft ? 3 : -3;
 
   return (
-    <motion.div
+    <motion.a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{
         opacity: 0,
-        y: 50,
-        rotateX: 25,
-        rotateY: 25,
+        y: 100,
+        rotateX: 45,
+        rotateY: 45,
         rotateZ: 2,
         scale: 0.9,
       }}
@@ -43,16 +48,13 @@ export function ExperienceCard({
         transition: {
           type: "spring",
           stiffness: 300,
-          damping: 15, // Low damping creates the "bounce"
+          damping: 10,
           delay: 0,
         },
       }}
-      viewport={{ once: true, margin: "-300px" }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{
-        // This delay applies to everything not specified below
         delay: delay,
-
-        // Custom settings for the entrance properties
         opacity: {
           delay: delay,
           duration: 1,
@@ -60,26 +62,24 @@ export function ExperienceCard({
         },
         y: {
           delay: delay,
-          duration: 1,
+          duration: 1.6,
           ease: [0.22, 1, 0.36, 1],
         },
         rotateX: {
           delay: delay,
-          duration: 1,
+          duration: 1.6,
           ease: [0.22, 1, 0.36, 1],
         },
         rotateY: {
           delay: delay,
-          duration: 1,
+          duration: 1.6,
           ease: [0.22, 1, 0.36, 1],
         },
         scale: {
           delay: delay,
-          duration: 1,
+          duration: 1.6,
           ease: [0.22, 1, 0.36, 1],
         },
-
-        // The fix: rotateZ (hover) has 0 delay and its own spring
         rotateZ: {
           delay: 0,
           type: "spring",
@@ -88,7 +88,7 @@ export function ExperienceCard({
         },
       }}
       style={{ perspective: 1000 }}
-      className="w-full p-8 flex flex-col bg-card border-2 border-white/4 rounded-[40px]"
+      className="w-full p-8 flex flex-col bg-card border-2 border-white/4 rounded-[40px] md:shadow-[0_16px_40px_rgba(0,0,0,0.3)]"
     >
       <img src={image} alt="" className="rounded-[20px]" />
       <div className="px-4">
@@ -109,6 +109,6 @@ export function ExperienceCard({
           </span>
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

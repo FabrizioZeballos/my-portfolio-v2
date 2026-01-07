@@ -4,7 +4,7 @@ import { CardHeader } from "../common/CardHeader";
 export function About() {
   return (
     <div className="relative z-20 px-4 md:px-0">
-      <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px]">
+      <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)]">
         <div className="flex flex-1 w-full h-full">
           <img
             src={aboutImg}

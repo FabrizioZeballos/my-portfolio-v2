@@ -46,7 +46,9 @@ export function ProjectItem({
             ))}
           </div>
         </div>
-        <p className="my-3 text-gray-secondary font-sans">{description}</p>
+        <p className="my-3 text-gray-secondary font-sans font-light">
+          {description}
+        </p>
         <div className="flex gap-3 mt-4">
           {techStack.map((tech) => (
             <span

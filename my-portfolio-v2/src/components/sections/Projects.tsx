@@ -8,7 +8,7 @@ import { FaLink } from "react-icons/fa6";
 
 export function Projects() {
   return (
-    <div className="hidden md:block md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px]">
+    <div className="hidden md:block md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)]">
       <div className="flex flex-col bg-[#141415] text-white gap-30">
         <CardHeader header={"pet projects"} />
         <ProjectItem
@@ -46,9 +46,9 @@ export function Projects() {
         />
         <ProjectItem
           image={project3}
-          title={"ecommerce backend"}
+          title={"e-commerce backend"}
           description={
-            "an ecommerce app designed to manage products, users, and orders with a backend built on a restful api that integrates seamlessly with other systems"
+            "an e-commerce app designed to manage products, users, and orders with a backend built on a restful api that integrates seamlessly with other systems"
           }
           techStack={["nestjs", "postgresql"]}
           links={[
