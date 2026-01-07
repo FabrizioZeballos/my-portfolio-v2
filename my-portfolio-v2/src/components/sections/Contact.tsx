@@ -1,20 +1,26 @@
-import memoji from "../../assets/experience-1.png";
+import memojiFirst from "../../assets/memoji-2.png";
+import memojiSecond from "../../assets/memoji-1.png";
 
 export function Contact() {
   return (
-    <section className="py-40 flex justify-center items-center">
+    <section className="py-100 flex justify-center items-center">
       <a
         href="mailto:your-email@example.com"
-        className="group flex items-center gap-6 hover:opacity-80 transition-all duration-300"
+        className="group flex items-center"
       >
-        <div className="w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+        <div className="relative w-16 h-16 md:w-30 md:h-30 overflow-hidden rounded-full">
           <img
-            src={memoji}
+            src={memojiFirst}
             alt="Get in touch"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 group-hover:scale-110"
+          />
+          <img
+            src={memojiSecond}
+            alt="Get in touch active"
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-110"
           />
         </div>
-        <h2 className="text-4xl md:text-7xl font-bold text-white-primary tracking-tighter">
+        <h2 className="text-[32px] md:text-[42px] font-bold text-white-primary tracking-tighter">
           get in touch
         </h2>
       </a>

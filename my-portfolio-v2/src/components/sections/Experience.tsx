@@ -4,7 +4,7 @@ import { ExperienceCard } from "../common/ExperienceCard";
 
 export function Experience() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto py-60 px-5 md:py-60 md:px-24 [&>*:nth-child(even)]:md:translate-y-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto py-60 px-5 md:py-100 md:pb-120 md:px-24 [&>*:nth-child(even)]:md:translate-y-24">
       <ExperienceCard
         image={experience2}
         company={"b/ackcode_"}
