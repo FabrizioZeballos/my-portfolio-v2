@@ -27,26 +27,31 @@ export function About() {
                   b/ackcode_,
                 </span>
               </span>
-              <br />
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span>a swiss-based software startup</span>
             </p>
             <p className="my-8 md:my-9">
-              <span>there, I built react features for an in-person</span>
-              <br />
+              <span>there, i built react features for an in-person</span>
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span>
                 luxury watch configurator for{" "}
                 <span className="text-white-secondary font-normal">
                   audemars piguet
                 </span>
               </span>
-              <br />
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span>and contributed to an ai assistant using llms,</span>
-              <br />
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span>python, langgraph, mcps, and electron</span>
             </p>
             <p className="my-8 md:my-9">
               <span>studying law on the side, now in my 4th year at</span>
-              <br />
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span className="">national university of cuyo</span>
             </p>
             <p className="my-8 md:my-9 text-gray-secondary font-sans font-light">
@@ -57,7 +62,8 @@ export function About() {
             </p>
             <p className="hidden md:block mt-8 md:mt-9">
               <span>when i'm not building interfaces or debugging</span>
-              <br />
+              <span className="inline mr-1 md:hidden" />
+              <br className="hidden md:block" />
               <span>apis, i'm out exploring places like this 📸</span>
             </p>
           </div>

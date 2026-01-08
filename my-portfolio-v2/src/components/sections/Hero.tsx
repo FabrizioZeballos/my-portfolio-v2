@@ -9,8 +9,8 @@ export function Hero() {
   return (
     <div className="h-[calc(100vh-15rem)] px-4 md:px-24 flex items-center">
       <motion.div style={{ y, opacity }}>
-        <p className="text-[32px] md:text-[42px] tracking-tight leading-normal text-white-primary font-jakarta font-bold">
-          <div className="flex items-center gap-1">
+        <p className="text-[32px] md:text-[42px] tracking-normal leading-normal text-white-primary/100 font-jakarta font-bold">
+          <div className="flex items-center gap-2">
             <motion.span
               className="block text-muted"
               initial={{ x: -40, opacity: 0 }}

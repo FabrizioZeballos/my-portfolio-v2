@@ -24,7 +24,7 @@ export function ProjectItem({
     <div className="flex justify-center items-center">
       <div className="relative flex-1 w-full aspect-video rounded-[20px] bg-card">
         <div
-          className={`absolute inset-0 z-25 rounded-[40px] blur-[70px] opacity-10 ${glow}`}
+          className={`absolute inset-0 z-25 rounded-[40px] blur-[60px] opacity-8 ${glow}`}
         ></div>
         <img
           src={image}
