@@ -1,5 +1,6 @@
 import aboutImg from "../../assets/about.jpg";
 import { CardHeader } from "../common/CardHeader";
+import { motion } from "motion/react";
 
 export function About() {
   return (
@@ -10,10 +11,16 @@ export function About() {
             <div
               className={`hidden md:block absolute translate-y-16 inset-0 z-25 rounded-[40px] blur-[100px] opacity-20 bg-gradient-to-br from-[#3da0fd]/80 via-[#3da0fd]/50 to-[#3da0fd]/20`}
             ></div>
-            <img
+            <motion.img
               src={aboutImg}
-              alt=""
+              alt="About me"
               className="relative z-30 rounded-[40px] w-full h-full object-cover"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 1.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             />
           </div>
         </div>
