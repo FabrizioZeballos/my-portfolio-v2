@@ -20,11 +20,11 @@ export function ProjectItem({
 }: ProjectItemProps) {
   return (
     <div className="flex justify-center items-center">
-      <div className="flex-1 h-full w-full">
+      <div className="flex-1 w-full aspect-video overflow-hidden rounded-[20px] bg-card">
         <img
           src={image}
           alt=""
-          className="h-full w-full object-cover rounded-[20px]"
+          className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
         />
       </div>
       <div className="pl-18 flex flex-col flex-1">

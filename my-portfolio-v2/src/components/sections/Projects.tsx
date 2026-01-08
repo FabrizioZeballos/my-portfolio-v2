@@ -13,6 +13,21 @@ export function Projects() {
         <CardHeader header={"pet projects"} />
         <ProjectItem
           image={project1}
+          title={"coreforce fitness"}
+          description={
+            "a gym application where users can access an ai-powered chatbot, interact with trainers in real-time, and purchase memberships"
+          }
+          techStack={["nestjs", "react", "tailwind", "postgresql"]}
+          links={[
+            { url: "https://front-core-force.vercel.app/", icon: FaLink },
+            {
+              url: "https://github.com/AgustinNBertagna/core-force-fitness",
+              icon: FaGithub,
+            },
+          ]}
+        />
+        <ProjectItem
+          image={project2}
           title={"hhbc bank"}
           description={
             "a banking application enhancing customer service with streamlined appointment scheduling, cancellation, and integrated user authentication"
@@ -25,21 +40,6 @@ export function Projects() {
             },
             {
               url: "https://github.com/FabrizioZeballos/Bank-Application",
-              icon: FaGithub,
-            },
-          ]}
-        />
-        <ProjectItem
-          image={project2}
-          title={"coreforce fitness"}
-          description={
-            "a gym application where users can access an ai-powered chatbot, interact with trainers in real-time, and purchase memberships"
-          }
-          techStack={["nestjs", "react", "tailwind", "postgresql"]}
-          links={[
-            { url: "https://front-core-force.vercel.app/", icon: FaLink },
-            {
-              url: "https://github.com/AgustinNBertagna/core-force-fitness",
               icon: FaGithub,
             },
           ]}

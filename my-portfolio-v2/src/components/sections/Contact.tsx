@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import memojiFirst from "../../assets/memoji-2.png";
-import memojiSecond from "../../assets/memoji-1.png";
+import memojiFirst from "../../assets/memoji-1.png";
+import memojiSecond from "../../assets/memoji-2.png";
 
 export function Contact() {
   const containerRef = useRef(null);
@@ -39,7 +39,7 @@ export function Contact() {
         style={{ y, opacity }}
         className="group flex items-center"
       >
-        <div className="relative w-22 h-22 md:w-30 md:h-30 overflow-hidden rounded-full">
+        <div className="relative w-22 h-22 md:w-30 md:h-30 overflow-hidden">
           <img
             src={memojiFirst}
             alt="Get in touch"
