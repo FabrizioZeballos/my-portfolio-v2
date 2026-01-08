@@ -9,6 +9,7 @@ type ProjectItemProps = {
   description: string;
   techStack: string[];
   links?: ProjectLink[];
+  glow: string;
 };
 
 export function ProjectItem({
@@ -17,14 +18,18 @@ export function ProjectItem({
   description,
   techStack,
   links,
+  glow,
 }: ProjectItemProps) {
   return (
     <div className="flex justify-center items-center">
-      <div className="flex-1 w-full aspect-video overflow-hidden rounded-[20px] bg-card">
+      <div className="relative flex-1 w-full aspect-video rounded-[20px] bg-card">
+        <div
+          className={`absolute inset-0 z-25 rounded-[40px] blur-[70px] opacity-10 ${glow}`}
+        ></div>
         <img
           src={image}
           alt=""
-          className="w-full h-full object-cover object-top"
+          className="relative z-30 w-full h-full object-cover object-top rounded-[20px]"
         />
       </div>
       <div className="pl-18 flex flex-col flex-1">

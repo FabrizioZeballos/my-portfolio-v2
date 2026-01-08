@@ -4,13 +4,18 @@ import { CardHeader } from "../common/CardHeader";
 export function About() {
   return (
     <div className="relative z-20 px-4 md:px-0">
-      <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)]">
+      <div className="w-full flex flex-col md:flex-row-reverse md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)] overflow-hidden">
         <div className="flex flex-1 w-full h-full">
-          <img
-            src={aboutImg}
-            alt=""
-            className="rounded-[40px] mb-14 md:mb-0 w-full h-full object-cover"
-          />
+          <div className="relative mb-12 md:mb-0">
+            <div
+              className={`hidden md:block absolute translate-y-16 inset-0 z-25 rounded-[40px] blur-[100px] opacity-20 bg-gradient-to-br from-[#3da0fd]/80 via-[#3da0fd]/50 to-[#3da0fd]/20`}
+            ></div>
+            <img
+              src={aboutImg}
+              alt=""
+              className="relative z-30 rounded-[40px] w-full h-full object-cover"
+            />
+          </div>
         </div>
         <div className="flex flex-col flex-1">
           <CardHeader header={"about me"} />

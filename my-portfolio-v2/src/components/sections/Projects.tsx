@@ -8,7 +8,7 @@ import { FaLink } from "react-icons/fa6";
 
 export function Projects() {
   return (
-    <div className="hidden md:block md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)]">
+    <div className="hidden md:block md:bg-card md:py-26 md:px-30 border-0 md:border-2 border-white/4 rounded-[40px] md:shadow-[0_20px_100px_rgba(0,0,0,0.6)] overflow-hidden">
       <div className="flex flex-col bg-[#141415] text-white gap-30">
         <CardHeader header={"pet projects"} />
         <ProjectItem
@@ -25,6 +25,7 @@ export function Projects() {
               icon: FaGithub,
             },
           ]}
+          glow="bg-gradient-to-br from-[#b983ff]/90 via-[#d5b8ff]/60 to-[#f2ebff]/30"
         />
         <ProjectItem
           image={project2}
@@ -43,6 +44,7 @@ export function Projects() {
               icon: FaGithub,
             },
           ]}
+          glow="bg-gradient-to-br from-[#1e6fd9]/90 via-[#4fa3ff]/60 to-[#a8d8ff]/35"
         />
         <ProjectItem
           image={project3}
@@ -57,6 +59,7 @@ export function Projects() {
               icon: FaGithub,
             },
           ]}
+          glow="bg-gradient-to-br from-[#4fdcff]/90 via-[#9be7ff]/60 to-[#eafaff]/30"
         />
       </div>
     </div>
