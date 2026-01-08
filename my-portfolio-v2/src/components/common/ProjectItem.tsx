@@ -24,7 +24,7 @@ export function ProjectItem({
         <img
           src={image}
           alt=""
-          className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+          className="w-full h-full object-cover object-top"
         />
       </div>
       <div className="pl-18 flex flex-col flex-1">

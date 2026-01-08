@@ -8,6 +8,7 @@ type ExperienceCardProps = {
   link: string;
   delay?: number;
   index: number;
+  glow?: string;
 };
 
 export function ExperienceCard({
@@ -18,6 +19,7 @@ export function ExperienceCard({
   link,
   delay,
   index,
+  glow = "bg-gradient-to-br from-pink-500 via-purple-500 to-orange-400",
 }: ExperienceCardProps) {
   const isLeft = index % 2 === 0;
   const hoverRotation = isLeft ? 3 : -3;
@@ -88,9 +90,18 @@ export function ExperienceCard({
         },
       }}
       style={{ perspective: 1000 }}
-      className="w-full p-8 flex flex-col bg-card border-2 border-white/4 rounded-[40px] md:shadow-[0_16px_40px_rgba(0,0,0,0.3)]"
+      className="w-full p-8 flex flex-col bg-card border-2 border-white/4 rounded-[40px] md:shadow-[0_16px_40px_rgba(0,0,0,0.3)] overflow-hidden"
     >
-      <img src={image} alt="" className="rounded-[20px]" />
+      <div className="relative mb-6">
+        <div
+          className={`absolute inset-0 -z-10 rounded-[28px] blur-3xl opacity-22 ${glow}`}
+        ></div>
+        <img
+          src={image}
+          alt=""
+          className="relative z-10 w-full rounded-[20px]"
+        />
+      </div>
       <div className="px-4">
         <h3 className="text-2xl font-semibold font-jakarta text-white-primary mt-4 mb-14">
           {company}

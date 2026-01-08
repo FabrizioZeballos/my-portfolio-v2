@@ -9,6 +9,7 @@ const EXPERIENCE_DATA = [
     role: ["full-stack", "developer"],
     period: "now",
     link: "https://www.linkedin.com/company/b-ackcode-sa/",
+    glow: "bg-gradient-to-br from-[#b983ff]/90 via-[#d5b8ff]/60 to-[#f2ebff]/30",
   },
   {
     image: experience1,
@@ -16,6 +17,7 @@ const EXPERIENCE_DATA = [
     role: ["full-stack", "ta"],
     period: "2024",
     link: "https://www.linkedin.com/school/henryok/",
+    glow: "bg-gradient-to-br from-[#fff200]/95 via-[#fff76a]/70 to-[#fffde1]/40",
   },
 ];
 
